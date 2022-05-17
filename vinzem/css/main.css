@@ -1,0 +1,449 @@
+body{
+	font-family: "RalewayRegular", sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+}
+
+.p0 {
+	padding: 0;
+}
+.m20 {
+	margin: 20px 0;
+}
+
+.main_line {
+	margin: 10px;
+	height: 1px;
+	background-color: #dab76c;
+}
+
+
+/*BUTTONS*/
+.my_btn{
+	color: #fff;
+	background-color: #ea661c;
+	border: none;
+	text-transform: uppercase;
+}
+.my_btn:hover,
+.my_btn:focus{
+	background-color: #4f2626;
+}
+.my_btn:active {
+	color: #005cbf;
+}
+.btn_md{
+	padding: 10px 30px;
+}
+.btn_lg {
+	padding: 15px 50px;
+}
+.btn_burger {
+	color: #4f2626;
+	font-size: 32px;
+}
+
+
+/*HEADER*/
+header{
+	height: 580px;
+	background-image: url('../img/banner.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+nav{
+	height: 100px;
+	width: 100%;
+	z-index: 9999;
+}
+
+.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li{
+	display: inline-block;
+	padding: 0 10px;
+}
+.menu li>a{
+	color: #692807;
+	text-transform: uppercase;
+	font-family: 'RalewayBold', sans-serif;
+}
+.menu li a:hover,
+.menu li a:focus{
+	text-decoration: none;
+	color: #ea661c;
+}
+.dd_menu {
+	background-color: #4f2626;
+	color: #fff;
+}
+.dd_menu a {
+	color: #fff;
+	font-family: 'RalewayBold', sans-serif;
+}
+.dd_menu a:hover,
+.dd_menu a:focus {
+	text-decoration: none;
+	background-color: #ead291;
+}
+
+.top_line{
+	margin: 10px;
+	height: 1px;
+	background-color: #e1e1e1;
+}
+.logo{
+	padding-top: 25px;
+}
+.logo_img {
+	width: 100px;
+	border-radius: 20%;
+}
+
+.title_block{
+	color: #4f2626;
+	text-align: center;
+	margin-top: 120px;
+}
+.title_block h1{
+	font-size: 50px;
+	font-family: 'RalewayBold', sans-serif;
+	margin-bottom: 30px;
+}
+.title_block h2{
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+.title_block button a {
+	text-decoration: none;
+	color: #fff;
+}
+.on_main_link {
+	color: #692807;
+	font-size: 16px;
+}
+
+/*PARAMETRS SECTION*/
+.params_s{
+	padding: 95px 0;
+}
+.param_block{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.param_block i{
+	font-size: 70px;
+	color: #e84545;
+	margin-bottom: 10px;
+
+}
+.param_block h3{
+	text-transform: uppercase;
+	font-family: "RalewayBold", sans-serif;
+	font-size: 18px;
+}
+.param_block p{
+	font-size: 14px;
+}
+
+/*WORKS SECTION*/
+.work_block{
+	position: relative;
+}
+.image_wrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(218, 183, 108, .7);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	opacity: 0;
+}
+.work_block:hover .image_wrap{
+	opacity: 1;
+}
+.work_descr{
+	color: #fff;
+	text-align: center;
+	margin: auto;
+}
+.work_descr a {
+	color: #fff;
+	text-decoration: none;
+}
+.work_descr:hover,
+.work_descr:focus {
+	border: 1px solid #fff;
+	cursor: default;
+}
+.work_descr:active {
+	color: #ead291;
+	cursor: pointer;
+}
+
+.works_header {
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.works_header h3 {
+	color: #4f2626;
+	font-size: 32px;
+}
+
+
+/*REVIEW SECTION*/
+.reviews_s{
+	padding: 95px 0;
+	color: #6c7279;
+}
+.review_item h4{
+	font-family: "RalewayBold", sans-serif;
+	color: #000;
+}
+.review_item>span{
+	text-transform: uppercase;
+	color: #e84545;
+	font-size: 14px;
+}
+.review_item p{
+	font-size: 14px;
+	padding: 10px 0;
+}
+.soc_btn{
+	border: 1px solid #c6cacc;
+	color: #c6cacc;
+	background-color: transparent;
+	width: 30px;
+	height: 30px;
+}
+
+.review_header {
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.review_header h3 {
+	color: #4f2626;
+	font-size: 32px;
+}
+
+.my_card  {
+	background-color: #ead291;
+}
+.my_card p,
+.my_card footer {
+	color: #000;
+}
+
+
+/*DOWNLOAD SECTION*/
+.contact_form{
+	padding: 30px 0;
+}
+.contact_form_block{
+	text-align: center;
+}
+
+.contact_form_block p{
+	font-family: "RalewayBold", sans-serif;
+	text-transform: uppercase;
+}
+.contact_form_block input:last-of-type {
+	margin: 0 auto;
+	width: 200px;
+}
+.contact_form_block form {
+	padding: 20px;
+	background-color: #ead291;
+
+}
+
+
+/*FOOTER*/
+.main_footer{
+	padding: 70px 0;
+	background-color: #3a3e64;
+}
+.footer_item{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.footer_item h5{
+	font-family: "RalewayBold", sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer_item p{
+	padding: 10px;
+	line-height: 50%;
+	font-size: 20px;
+	color: #c6cacc;
+}
+
+.copyright_block{
+	background-color: #313454;
+	text-align: center;
+	padding: 30px 0;
+}
+.copy_txt{
+	color: #9d9fb2;
+}
+.copy_txt p {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*INFO*/
+.info_s {
+	padding: 50px 0;
+	background-color: #ffedca;
+}
+
+.info_block {
+	font-family: "RalewayRegular", sans-serif;
+	text-align: justify;
+	text-indent: 2em;
+}
+
+.info_block h2 {
+	font-family: "RalewayBold", sans-serif;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+.info_block p {
+	font-size: 18px;
+}
+
+.info_block h3 {
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+.info_line {
+	margin: 10px 0;
+	height: 1px;
+	background-color: #692807;
+}
+
+/* Popup container */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+	visibility: visible;
+	-moz-animation: cssAnimation 0s ease-in 2s forwards;
+	/* Firefox */
+	-webkit-animation: cssAnimation 0s ease-in 2s forwards;
+	/* Safari and Chrome */
+	-o-animation: cssAnimation 0s ease-in 2s forwards;
+	/* Opera */
+	animation: cssAnimation 0s ease-in 2s forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+
+@keyframes cssAnimation {
+	to {
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
+}
+@-webkit-keyframes cssAnimation {
+	to {
+		width:0;
+		height:0;
+		visibility:hidden;
+	}
+}
+
+/*BUTTON_ON_TOP*/
+#btn_on_top {
+	display: inline-block;
+	background-color: #FF9800;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s,
+	opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+#btn_on_top::after {
+	content: "\f077";
+	font-family: FontAwesome, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 50px;
+	color: #fff;
+}
+#btn_on_top:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+#btn_on_top:active {
+	background-color: #555;
+}
+#btn_on_top.show {
+	opacity: 1;
+	visibility: visible;
+}

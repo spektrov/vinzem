@@ -1,0 +1,72 @@
+<footer>
+    <div class="main_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer_item">
+                        <h5>Номер телефону</h5>
+                        <p id="myPhone">123-456-7890</p>
+
+                        <div class="popup" onclick="popUpPhone()">
+                            <button class="btn btn-light" onclick="copyToClipboard('#myPhone')">Копіювати</button>
+                            <span class="popuptext" id="popUpPhone">Скопійовано</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  d-md-block">
+                    <div class="footer_item">
+                        <h5>E-mail</h5>
+                        <p id="myEmail">vinzem@gmail.com</p>
+                        <div class="popup" onclick="popUpEmail()">
+                            <button class="btn btn-light" onclick="copyToClipboard('#myEmail')">Копіювати</button>
+                            <span class="popuptext" id="popUpEmail">Скопійовано</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer_item">
+                        <h5>адреса</h5>
+                        <p>Вінницька область</p>
+                        <p>	что-то там</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright_block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <div class="copy_txt">
+                        <p>Copyright © vinzem.com.ua, 20xx-2022. </p>
+                        <p>All rights reserved.</p>
+                        <p>Developed by SpektrovD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    // When the user clicks on <div>, open the popup
+    function popUpPhone() {
+        var popup = document.getElementById("popUpPhone");
+        popup.classList.toggle("show");
+    }
+    function popUpEmail() {
+        var popup = document.getElementById("popUpEmail");
+        popup.classList.toggle("show");
+    }
+
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+
+</script>

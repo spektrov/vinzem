@@ -1,0 +1,91 @@
+
+<!-- Back to top button -->
+<a id="btn_on_top"></a>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a href="index.html" class="navbar-brand logo">
+                <img src="../img/logo.png" class="logo_img" alt="logo"> <br>
+                <span class="on_main_link"> <i class="fa fa-arrow-left" ></i> На головну</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <i class="fa fa-bars fa-regular btn_burger"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto menu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Землевпорядні послуги
+                        </a>
+                        <div class="dropdown-menu dd_menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="land_privatization.html#land_privatization">Приватизація землі</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="about_us.html">Послуга</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Послуга</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Супутні земельні послуги
+                        </a>
+                        <div class="dropdown-menu dd_menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Послуга</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Послуга</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Послуга</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Інформаційна підтримка
+                        </a>
+                        <div class="dropdown-menu dd_menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Законодавство</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Про нас</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="top_line"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 col-sm-12 ">
+                <div class="title_block">
+                    <h1>Вітаємо на Vinzem!</h1>
+                    <h2>Замовте послуги найкращих землевпорядників.</h2>
+                    <button class="btn my_btn btn_md">
+                        <a href="index.html#contact_form"> Отримати консультацію <i class="fa fa-light fa-arrow-down"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    var btn = $('#btn_on_top');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+</script>
