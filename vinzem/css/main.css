@@ -90,6 +90,10 @@ nav{
 	text-decoration: none;
 	background-color: #ead291;
 }
+.dd_menu a {
+	overflow-wrap: break-word;
+	white-space: normal;
+}
 
 .top_line{
 	margin: 10px;
